@@ -1,0 +1,20 @@
+{
+  "presets": [
+    ["@babel/preset-env", { "useBuiltIns": "usage","corejs": 3 }],
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": [
+          "./src"
+        ],
+        "alias": {}
+      }
+    ],
+    "react-hot-loader/babel",
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-optional-chaining"
+  ]
+}
